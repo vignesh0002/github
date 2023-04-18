@@ -14,7 +14,7 @@ pipeline
     stage('Docker deploy') {
     	agent any
       steps {
-          sh 'docker run -d -p 9091:8080'
+          sh 'docker run -d -p 9091:8080 vignesh_nginx:1.1'
           
         }
       }
